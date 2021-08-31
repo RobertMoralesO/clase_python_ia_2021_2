@@ -122,6 +122,53 @@ a = 'hola'
 b = a * 5
 
 
+# Capturar por pantalla
+
+nombre = input('Digite su nombre: ')
+print('Hola', nombre)
+
+
+print('Digite su nombre: ')
+nombre = input()
+print('Hola', nombre)
+
+
+# HUA que sume dos números e imprima su resultado
+
+numero_uno = float(input('Digite el número uno: '))
+numero_dos = float(input('Digite el número dos: '))
+suma = numero_uno + numero_dos
+# print(suma)
+# print('La suma es: ', suma)
+print(f'La suma de los número {numero_uno} + {numero_dos} es {suma}')
+
+# HUA que lea un número y lo eleve al cuadrado
+base = int(input('Digite la base a elevar: '))
+potencia = base ** 2
+print(f'El resultado de elevar {base} al cuadrado es: {potencia}')
+
+# HUA que tome el valor de un producto, le aplique el 20%
+# de descuento, imprima el valor del producto inicial,
+# el valor con descuento y el valor ahorrado
+
+vproducto = float(input('Digite el valor del producto: $'))
+descuento = vproducto * 0.20
+vfinal = vproducto - descuento
+print(f'El valor inicial del producto es: ${vproducto:,}')
+print(f'El valor del descuento es: ${descuento:,}')
+print(f'El valor final del producto es: ${vfinal:,}')
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
