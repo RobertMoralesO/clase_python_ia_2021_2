@@ -94,18 +94,39 @@ else:
     print(f'El número es cero')
 
 
+# Ciclos
+    
+# Ciclo for
+    
+for valor in range(11):
+    print(valor)
+
+for valor in range(1, 11):
+    print(valor)
+
+for valor in range(2, 11, 2):
+    print(valor)
+
+for valor in range(11):
+    print(valor)
+    print(valor + 1)
+
+# HUA que de las n notas de un estudiante  y calcule el promedio
+# académico final
 
 
-
-
-
-
-
-
-
-
-
-
+num = int(input('Digite número de notas cursadas: '))
+if(num > 0):
+    acumulador = 0
+    for x in range(num):
+        nota = float(input(f'Digite la nota {x + 1}: '))
+        acumulador = acumulador + nota
+    promedio = acumulador / num
+    promedio = round(promedio, 2)
+    print(f'El promedio final es: {promedio}')
+else:
+    print('El número de notas no puede ser menor o igual a cero')
+    
 
 
 
