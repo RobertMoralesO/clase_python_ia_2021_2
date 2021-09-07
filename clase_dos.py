@@ -38,8 +38,8 @@ print(not False)  # True
 
 # Mas de dos condiciones al mismo tiempo
 
-print(True and False and True or False or True or  True) # True
-print(True and (False and True) or False or (True or True)) #True
+print(True and False and True or False or True or True)  # True
+print(True and (False and True) or False or (True or True))  # True
 
 # Jerarquía de operaciones
 # 1. Paréntesis y llaves
@@ -50,6 +50,60 @@ print(True and (False and True) or False or (True or True)) #True
 # Jerarquía de operaciones booleanas
 # 1. Paréntesis y llaves
 # 2. Tabla de verdad
+
+# Estructura if
+x = -1
+if(x > 0):
+    print('1')
+else:
+    print('2')
+    print('3')
+
+
+# HUA que dada la edad de una persona indique si es mayor
+# o menor de edad
+
+edad = int(input('Digite su edad: '))
+if(edad >= 18):
+    print('Usted es mayor de edad')
+else:
+    print('Usted es menor de edad')
+
+# HUA que indique si un estudiante aprobó o reprobó una
+# asignatura teniendo en cuenta que aprueba con mínimo
+# una calificación de 3.0 hasta 5.0. El rango válido de una nota es
+# entre 0 y 5.
+
+nota_final = float(input('Digite la nota final: '))
+if(nota_final >= 3.0 and nota_final <= 5.0):
+    print('Usted aprobó la asignatura')
+elif(nota_final < 3.0 and nota_final > 0):
+    print('Usted reprobó la asignatura')
+else:
+    print('La nota ingresada no es válida')
+
+# HUA que dado un número n diga si es negativo, positivo o
+# cero.
+
+n = float(input('Digite el número: '))
+if (n > 0):
+    print(f'El número {n} es positivo')
+elif (n < 0):
+    print(f'El número {n} es negativo')
+else:
+    print(f'El número es cero')
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
