@@ -11,7 +11,7 @@ Created on Mon Sep 13 19:24:11 2021
 # Listas o vectores
 # Tipo de dato mutable y ordenado
 
-a = [2, 3, 4]
+a = [1, 2, 3, 4]
 b = [2, True, 'Hola', 3.4]
 c = [2, [3, 4], ['Hola', 'Mundo'], [2.3, [2.4, 2.5], 2.6]]
 
@@ -37,13 +37,52 @@ a.clear()  # Elimina todos los elementos del vector
 # del a
 4 in a  # Busca el emento 4 dentro de a
 len(a)  # Cantidad de elementos del vector
-a = b # Asignación de b en el mismo espacio de memoria de a
-id(a) # Convierte a decimal la dirección en memoria de un objeto
-a = b.copy() # Copia los elementos de b en a
+a = b  # Asignación de b en el mismo espacio de memoria de a
+id(a)  # Convierte a decimal la dirección en memoria de un objeto
+a = b.copy()  # Copia los elementos de b en a
 a = b[:]
-b = a [0:3]
+b = a[0:3]
 b = a[:6]
 b = a[2:]
+
+
+# Tuplas
+# Tipo de dato INMUTABLE y ordenado
+
+a = (1, 2, 3, 4)
+print(a[1])
+a = (2, 3, 4)
+b = (2, True, 'Hola', 3.4)
+c = (2, [3, 4], ['Hola', 'Mundo'], [2.3, [2.4, 2.5], 2.6])
+4 in a
+
+
+# Set
+# Mutable pero NO ordenado
+
+a = {1, 2, 3, 4}
+print(a[1])
+b = {2, True, 'Hola', 3.4}
+c = {2, [3, 4], ['Hola', 'Mundo'], [2.3, [2.4, 2.5], 2.6]}  # No permite arrays en su interior
+4 in a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
